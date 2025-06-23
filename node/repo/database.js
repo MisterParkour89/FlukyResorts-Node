@@ -5,7 +5,7 @@ import { getFirestore, Timestamp, FieldValue, Filter } from 'firebase-admin/fire
 import fs from 'fs'
 
 const serviceAccount = JSON.parse(
-  fs.readFileSync('./.secrets/proyflukyresorts-fdb0444dd8fa.json', 'utf8')
+  fs.readFileSync('/etc/secrets/proyflukyresorts-fdb0444dd8fa.json', 'utf8')
 );
 initializeApp({
   credential: cert(serviceAccount)
